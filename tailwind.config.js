@@ -7,7 +7,11 @@ module.exports = {
   ],
   darkMode: ['class', '[data-mode="dark"]'],
   theme: {
-    extend: {}
+    extend: {
+      colors: {
+        'regal-blue': '#243c5a',
+      },
+    }
   },
   plugins: [
     require('flowbite/plugin')
