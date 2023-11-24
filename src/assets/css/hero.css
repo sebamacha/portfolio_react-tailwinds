@@ -1,0 +1,33 @@
+.hero {
+    height: 90vh;
+    background-image: url("../img/hero.webp");
+    background-size: cover; /* Para que la imagen ocupe todo el contenedor sin repetirse */
+    background-position: center; /* Para centrar la imagen si es necesario */
+}
+
+.porfolio-digital{
+
+margin-top: 70px;
+opacity: 0.8;
+
+}
+
+.avatar-img{
+    margin-top: 35px;
+}
+@media (max-width: 767px) {
+    .hero {
+        background-image: url("../img/hero-mobile.webp");
+    }
+
+    .porfolio-digital{
+        margin-top:100px;
+        color: white;
+        font-size: 55px;
+    }
+}
+
+.avat{
+    margin-top: 50px;
+
+}
