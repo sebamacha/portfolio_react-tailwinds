@@ -24,7 +24,7 @@ const Skills = () => {
         impactantes y funcionales."
       </p>
       <div className='grid grid-cols-1 gap-6 sm:grid-cols-2'>
-        <p className='m-4 text-black dark:text-white dark:bg-gray-900'>
+        <div className='m-4 text-black dark:text-white dark:bg-gray-900'>
           <div className='flex justify-center'>
             <h3 className='text-4xl italic m-2 font-bold text-black dark:text-white'>
               Frontend
@@ -83,8 +83,8 @@ const Skills = () => {
           <span className='bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-yellow-900 dark:text-yellow-300'>
             Canva
           </span>
-        </p>
-        <p className='m-4 text-black dark:text-white dark:bg-gray-900'>
+        </div>
+        <div className='m-4 text-black dark:text-white dark:bg-gray-900'>
           <div className='flex justify-center'>
             <h3 className='text-4xl  italic m-2 font-bold text-black dark:text-white'>
               Backend
@@ -121,7 +121,7 @@ const Skills = () => {
           <span className='bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300'>
             Git
           </span>
-        </p>
+        </div>
       </div>
       <p className='p-4 text-black text-lg font-bold dark:text-white dark:bg-gray-900'>
         Destaco por mi habilidad para colaborar en equipo, comunicar ideas de

@@ -1,0 +1,10 @@
+.certificates{
+    padding-top: 35px;
+    padding-bottom: 90px;
+}
+
+@media (max-width: 768px) {
+    .certificates {
+      padding-bottom: 150px;
+    }
+  }
