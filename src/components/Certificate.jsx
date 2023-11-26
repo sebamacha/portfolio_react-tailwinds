@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import img1 from "../assets/img/certificados/1.webp";
 import img2 from "../assets/img/certificados/2.webp";
 import img3 from "../assets/img/certificados/3.webp";
@@ -21,30 +21,39 @@ import "../assets/css/certificate.css";
 
 const Certificate = () => {
   const [selectedImage, setSelectedImage] = useState(null);
-  const [scrollPosition, setScrollPosition] = useState(0);
+  const [originalScrollPosition, setOriginalScrollPosition] = useState(0);
+  const imageRef = useRef(null);
 
   const handleImageClick = (event) => {
     const selectedImageSrc = event.target.src;
     setSelectedImage(selectedImageSrc);
-    setScrollPosition(window.scrollY);
   };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+    window.scrollTo({
+      top: originalScrollPosition,
+      behavior: "smooth",
+    });
+  };
+
+  useEffect(() => {
+    if (selectedImage) {
+      setOriginalScrollPosition(window.scrollY);
+      imageRef.current?.scrollIntoView({ behavior: "smooth", block: "center" });
+    }
+  }, [selectedImage]);
 
   return (
     <div className='certificates dark:text-white dark:bg-gray-900'>
       {selectedImage && (
-        <div
-          className='modal  dark:text-white dark:bg-gray-900'
-          style={{ top: scrollPosition }}>
-          <img src={selectedImage} alt='' style={{ width: "100%" }} />
+        <div className='modal dark:text-white dark:bg-gray-900'>
+          <div ref={imageRef}>
+            <img src={selectedImage} alt='' style={{ width: "100%" }} />
+          </div>
           <button
-            className='absolute mt-5 mr-5 top-0 right-0 border-gray-400 text-white bg-red-800 hover:bg-red-500 focus:outline-none focus:ring-4 focus:ring-purple-300  rounded-full text-2xl font-bold px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 animate-pulse'
-            onClick={() => {
-              setSelectedImage(null);
-              window.scrollTo({
-                top: scrollPosition,
-                behavior: "smooth",
-              });
-            }}
+            className='absolute mt-5 mr-5 top-0 right-0 border-gray-400 text-white bg-red-800 hover:bg-red-500 focus:outline-none focus:ring-4 focus:ring-purple-300 rounded-full text-2xl font-bold px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 animate-pulse'
+            onClick={closeModal}
             style={{ opacity: 0.8 }}>
             Cerrar
           </button>
