@@ -17,23 +17,34 @@ const Footer = ({ transparentBackground }) => {
       </span>
       <ul className='flex flex-wrap items-center mt-3 text-base font-medium text-white dark:text-gray-400 sm:mt-0'>
         <li>
-          <a href='#' className='hover:underline me-4 md:me-6'>
-            About
+          <a
+            href='mailto:sebastian.j.macharette@gmail.com'
+            className='hover:underline me-4 md:me-6'>
+            Correo Electronico
           </a>
         </li>
         <li>
-          <a href='#' className='hover:underline me-4 md:me-6'>
-            Privacy Policy
+          <a
+            rel='noreferrer'
+            target='_blank'
+            href='https://github.com/sebamacha'
+            className='hover:underline me-4 md:me-6'>
+            Repositorio
           </a>
         </li>
         <li>
-          <a href='#' className='hover:underline me-4 md:me-6'>
-            Licensing
+          <a
+            rel='noreferrer'
+            target='_blank'
+            href='https://www.dropbox.com/scl/fi/8yxrtc8j1odo3u1ezm5ec/Curriculum.pdf?rlkey=mjtj5wtdbherek9ivkaorbzj8&dl=0'
+            className='hover:underline me-4 md:me-6'>
+            Download CV
           </a>
         </li>
+
         <li>
-          <a href='#' className='hover:underline'>
-            Contact
+          <a href='/contact' className='hover:underline'>
+            Contacto
           </a>
         </li>
       </ul>

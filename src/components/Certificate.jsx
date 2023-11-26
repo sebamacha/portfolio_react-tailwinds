@@ -21,20 +21,24 @@ import "../assets/css/certificate.css";
 
 const Certificate = () => {
   const [selectedImage, setSelectedImage] = useState(null);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleImageClick = (event) => {
     const selectedImageSrc = event.target.src;
     setSelectedImage(selectedImageSrc);
+    setScrollPosition(window.scrollY);
   };
+
   return (
     <div className='certificates dark:text-white dark:bg-gray-900'>
       {selectedImage && (
-        <div className=' modal dark:text-white dark:bg-gray-900'>
+        <div
+          className='modal  dark:text-white dark:bg-gray-900'
+          style={{ top: scrollPosition }}>
           <img src={selectedImage} alt='' style={{ width: "100%" }} />
           <button
-            className='absolute mt-5 mr-5 top-0 right-0 border-gray-400 text-white bg-red-800 hover:bg-red-500 focus:outline-none focus:ring-4 focus:ring-purple-300  rounded-full text-2xl font-bold px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 animate-pulse'
+            className='absolute mt-5 mr-5 top-0 right-0 border-gray-400 text-white bg-red-800 hover:bg-red-500 focus:outline-none focus:ring-4 focus:ring-purple-300  rounded-full text-2xl font-bold px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 animate-pulse'
             onClick={() => {
-              const scrollPosition = window.scrollY;
               setSelectedImage(null);
               window.scrollTo({
                 top: scrollPosition,
@@ -191,7 +195,6 @@ const Certificate = () => {
             onClick={handleImageClick}
           />
         </div>
-        {/* Other images with onClick event */}
       </div>
     </div>
   );
