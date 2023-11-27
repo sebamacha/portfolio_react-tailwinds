@@ -60,7 +60,7 @@ const Navbar = () => {
           </button>
           <div className='hidden w-full md:block md:w-auto' id='navbar-default'>
             <ul className='font-medium flex flex-col p-4 md:p-0 mt-4 bg-blue-500 border border-gray-100 rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-blue-500 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
-              <li className='bg-neutral-200'>
+              <li>
                 <Link
                   to='/'
                   className='block py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:text-gray-900 md:p-0 dark:text-white md:dark:text-white'

@@ -1,4 +1,6 @@
-import { Routes, Route } from "react-router-dom";
+import React from "react";
+
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./shared/Navbar";
 import Footer from "./shared/Footer";
 import Home from "./components/Home.jsx";
@@ -7,14 +9,10 @@ import Skills from "./components/Skills";
 import Certificate from "./components/Certificate.jsx";
 import Proyect from "./components/Proyect.jsx";
 import Contact from "./components/Contact.jsx";
-import { useLocation } from "react-router-dom";
 
 const App = () => {
-  const location = useLocation();
-  const isHome = location.pathname === "/";
-
   return (
-    <div className={`${isHome ? "bg-transparent" : "bg-gray-200"}`}>
+    <Router>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -24,8 +22,8 @@ const App = () => {
         <Route path='proyect' element={<Proyect />} />
         <Route path='contact' element={<Contact />} />
       </Routes>
-      <Footer transparentBackground={isHome} />
-    </div>
+      <Footer />
+    </Router>
   );
 };
 
