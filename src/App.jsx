@@ -1,6 +1,10 @@
-import React from "react";
-
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
 import Navbar from "./shared/Navbar";
 import Footer from "./shared/Footer";
 import Home from "./components/Home.jsx";
@@ -11,8 +15,19 @@ import Proyect from "./components/Proyect.jsx";
 import Contact from "./components/Contact.jsx";
 
 const App = () => {
+  const location = useLocation();
+  const [transparentBackground, setTransparentBackground] = useState(false);
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setTransparentBackground(true);
+    } else {
+      setTransparentBackground(false);
+    }
+  }, [location]);
+
   return (
-    <Router>
+    <div>
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
@@ -22,8 +37,8 @@ const App = () => {
         <Route path='proyect' element={<Proyect />} />
         <Route path='contact' element={<Contact />} />
       </Routes>
-      <Footer />
-    </Router>
+      <Footer transparentBackground={transparentBackground} />
+    </div>
   );
 };
 

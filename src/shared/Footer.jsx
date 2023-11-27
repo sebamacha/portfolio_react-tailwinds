@@ -1,3 +1,6 @@
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
 const Footer = ({ transparentBackground }) => {
   return (
     <footer
@@ -11,14 +14,14 @@ const Footer = ({ transparentBackground }) => {
         <a href='/' className='hover:underline'>
           Sebastian Macharette™
         </a>
-        . All Rights Reserved.
+        . Todos los derechos reservados.
       </span>
       <ul className='flex flex-wrap items-center mt-3 text-base font-medium text-white dark:text-gray-400 sm:mt-0'>
         <li>
           <a
             href='mailto:sebastian.j.macharette@gmail.com'
             className='hover:underline me-4 md:me-6'>
-            Correo Electronico
+            Correo Electrónico
           </a>
         </li>
         <li>
@@ -34,17 +37,13 @@ const Footer = ({ transparentBackground }) => {
           <a
             rel='noreferrer'
             target='_blank'
-            href='https://www.dropbox.com/scl/fi/8yxrtc8j1odo3u1ezm5ec/Curriculum.pdf?rlkey=mjtj5wtdbherek9ivkaorbzj8&dl=0'
+            href='https://www.dropbox.com/scl/fi/8yxrtc8jdo3u1odo3ec/Curriculum.pdf?key=m234567890'
             className='hover:underline me-4 md:me-6'>
-            Download CV
+            Descargar CV
           </a>
         </li>
 
-        <li>
-          <a href='/contact' className='hover:underline'>
-            Contacto
-          </a>
-        </li>
+        {/* Otros elementos del footer */}
       </ul>
     </footer>
   );
