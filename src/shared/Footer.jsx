@@ -1,5 +1,3 @@
-import React from "react";
-
 const Footer = ({ transparentBackground }) => {
   return (
     <footer
@@ -10,7 +8,7 @@ const Footer = ({ transparentBackground }) => {
       }`}>
       <span className='font-medium text-white sm:text-center dark:text-gray-400'>
         © 2023{" "}
-        <a href='https://flowbite.com/' className='hover:underline'>
+        <a href='/' className='hover:underline'>
           Sebastian Macharette™
         </a>
         . All Rights Reserved.

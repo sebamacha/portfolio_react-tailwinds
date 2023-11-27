@@ -28,8 +28,8 @@ const about = () => {
             </p>
           </div>
           <p className='text-gray-500 text-lg italic mt-6 pr-4 m-10 text-right'>
-            "Los buenos programadores saben qué escribir. Los grandes
-            programadores saben qué volver a escribir (y reutilizar)."
+            Los buenos programadores saben qué escribir. Los grandes
+            programadores saben qué volver a escribir (y reutilizar).
           </p>
 
           <h5 className=' text-gray-500  text-lg  italic m-10 pr-4 text-right animate-pulse'>

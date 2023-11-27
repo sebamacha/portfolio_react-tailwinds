@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+    .navbar-toggle {
+      width: 30px;
+      height: 30px;
+    }
+  
+    input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  

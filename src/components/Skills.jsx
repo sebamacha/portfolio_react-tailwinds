@@ -1,4 +1,3 @@
-import React from "react";
 import "../assets/css/skills.css";
 import java from "../assets/img/logos/java.png";
 import node from "../assets/img/logos/node.png";
@@ -17,11 +16,11 @@ const Skills = () => {
   return (
     <div className='skillss dark:bg-gray-900'>
       <p className='p-4 text-black text-lg font-bold dark:text-white dark:bg-gray-900'>
-        "Soy un desarrollador Full Stack con experiencia en Java y Python,
+        Soy un desarrollador Full Stack con experiencia en Java y Python,
         estudiante de diseño UX/UI. Mi trayectoria incluye sólidos conocimientos
         en desarrollo de aplicaciones, manejo de bases de datos y diseño de
         interfaces intuitivas. Apasionado por crear experiencias digitales
-        impactantes y funcionales."
+        impactantes y funcionales.
       </p>
       <div className='grid grid-cols-1 gap-6 sm:grid-cols-2'>
         <div className='m-4 text-black dark:text-white dark:bg-gray-900'>

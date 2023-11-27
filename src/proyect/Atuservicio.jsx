@@ -1,4 +1,3 @@
-import React from "react";
 import atuservicio from "../assets/img/proyect/atuservicio.webp";
 import "../assets/css/proyect.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

@@ -1,4 +1,3 @@
-import React from "react";
 import "../assets/css/proyect.css";
 import Atuservicio from "../proyect/Atuservicio";
 const Proyect = () => {

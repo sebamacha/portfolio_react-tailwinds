@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import logoNavbar from "../assets/img/nabvar.webp";
 import { Moon, Sun } from "react-feather";
+import "../assets/css/navbar.css";
 
 const Navbar = () => {
   const [theme, setTheme] = useState("light");
@@ -16,6 +17,12 @@ const Navbar = () => {
 
   const handleChangeTheme = () => {
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
+    const toggleButton = document.querySelector(".navbar-toggle");
+    const checkbox = document.querySelector('input[type="checkbox"]');
+
+    toggleButton.addEventListener("click", () => {
+      checkbox.checked = !checkbox.checked;
+    });
   };
   return (
     <>
@@ -56,7 +63,7 @@ const Navbar = () => {
               <li className='bg-neutral-200'>
                 <Link
                   to='/'
-                  className='block py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:text-gray-900 md:p-0 dark:text-white md:dark:text-blue-500'
+                  className='block py-2 px-3 text-gray-900 bg-blue-700 rounded md:bg-transparent md:text-gray-900 md:p-0 dark:text-white md:dark:text-white'
                   aria-current='page'>
                   Home
                 </Link>

@@ -1,6 +1,5 @@
-import React from "react";
 import "../assets/css/contact.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import img1 from "../assets/img/contacto/1.webp";
 import img2 from "../assets/img/contacto/2.webp";
 import img3 from "../assets/img/contacto/3.webp";
@@ -15,6 +14,10 @@ import img10 from "../assets/img/contacto/10.webp";
 const Contact = () => {
   return (
     <div className='tapiz dark:bg-slate-800 pt-4 dark:text-white'>
+      <div className='text-center m-4 p-4 text-4xl font-bold'>
+        <h1>Por estos medios puedes contactarme y ver parte de mis trabajos</h1>
+      </div>
+
       <div className='container mx-auto'>
         <div className='flex  justify-center flex-wrap p-4'>
           <a
