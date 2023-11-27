@@ -6,7 +6,7 @@ import About from "./components/About.jsx";
 import Skills from "./components/Skills";
 import Certificate from "./components/Certificate.jsx";
 import Proyect from "./components/Proyect.jsx";
-import Contact from "./components/contact.jsx";
+import Contact from "./components/Contact.jsx";
 import { useLocation } from "react-router-dom";
 
 const App = () => {
