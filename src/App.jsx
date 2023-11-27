@@ -2,12 +2,12 @@ import { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Navbar from "./shared/Navbar";
 import Footer from "./shared/Footer";
-import Home from "./components/Home.jsx";
-import About from "./components/About.jsx";
+import Home from "./components/Home";
+import About from "./components/About";
 import Skills from "./components/Skills";
-import Certificate from "./components/Certificate.jsx";
-import Proyect from "./components/Proyect.jsx";
-import Contact from "./components/Contact.jsx";
+import Certificate from "./components/Certificate";
+import Proyect from "./components/Proyect";
+import Contact from "./components/Contact";
 
 const App = () => {
   const location = useLocation();
