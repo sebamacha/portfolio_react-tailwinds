@@ -4,11 +4,13 @@ import avatar from "../assets/img/avatar.jpg";
 
 const Home = () => {
   return (
-    <section id='home' className='bg-slate-200 hero dark:bg-gray-900'>
-      <div className='py-8 px-4 mx-auto max-w-screen-lg text-center lg:py-16'>
-        <div className=' avatar-img flex flex-row justify-center gap-4'>
+    <section
+      id='home'
+      className='bg-slate-200 sm:mt-10 mt-32  hero dark:bg-gray-900'>
+      <div className='py-8 px-4  mt-16 mx-auto max-w-screen-lg text-center lg:py-16'>
+        <div className=' fotos mt-10 flex flex-row justify-center gap-4'>
           <img
-            className='w-6 h-6 rounded'
+            className='w-6 h-6 rounded '
             src={avatar}
             alt='Extra small avatar'
           />

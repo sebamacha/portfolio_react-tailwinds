@@ -13,7 +13,7 @@ import img10 from "../assets/img/contacto/10.webp";
 
 const Contact = () => {
   return (
-    <div className='tapiz dark:bg-slate-800 pt-4 dark:text-white'>
+    <div id='contact' className='tapiz dark:bg-slate-800 pt-4 dark:text-white'>
       <div className='text-center m-4 p-4 text-4xl font-bold'>
         <h1>Por estos medios puedes contactarme y ver parte de mis trabajos</h1>
       </div>

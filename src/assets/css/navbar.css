@@ -1,12 +1,31 @@
-@media (max-width: 768px) {
-    .navbar-toggle {
-      width: 30px;
-      height: 30px;
-    }
+.nav-position{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 500;
   
-    input[type="checkbox"] {
-      width: 20px;
-      height: 20px;
-    }
+
+}
+
+/* Estilos de la barra de navegación */
+.navbar {
+  /* Estilos generales de la barra de navegación */
+}
+
+/* Estilos para el contenedor del logo */
+.nav-logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos específicos para el logo */
+.nav-logo {
+  /* Estilos específicos del logo, como tamaño, márgenes, etc. */
+}
+@media (max-width: 600px) {
+  /* Estilos para dispositivos pequeños */
+  .botones {
+    margin-bottom: 12px;
   }
   
+}

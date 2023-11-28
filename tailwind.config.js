@@ -4,7 +4,8 @@ module.exports = {
     content: [
       "./index.html",
       "./src/**/*.{js,ts,jsx,tsx}",
-      "./node_modules/flowbite/**/*.js" // Corregido aquí para incluirlo en el mismo array
+      "./node_modules/flowbite/**/*.js" ,
+  "./node_modules/tw-elements/dist/js/**/*.js"
     ],
     darkMode: ['class', '[data-mode="dark"]'],
     theme: {
@@ -15,7 +16,8 @@ module.exports = {
       }
     },
     plugins: [
-      require('flowbite/plugin')
+      require('flowbite/plugin'),
+  require("tw-elements/dist/plugin.cjs")
     ]
   };
   

@@ -3,8 +3,10 @@ import avat from "../assets/img/avatar.jpg";
 
 const about = () => {
   return (
-    <div className='min-h-screen about px-1.5 py-1.5 md:py-0.5 sm:text-center bg-neutral-200 dark:bg-gray-900'>
-      <div className='flex flex-col mt-8 mb-6 md:flex-row items-center gap-4 md:text-center'>
+    <div
+      id='about'
+      className='min-h-screen about px-1.5 py-1.5 md:py-0.5 sm:text-center bg-neutral-200 dark:bg-gray-900'>
+      <div className='flex flex-col about-margin mb-6 md:flex-row items-center gap-4 md:text-center'>
         <img
           className='w-44 h-44 rounded-full ml-6 mb-4 md:mb-0 md:ml-0 md:mr-4'
           src={avat}

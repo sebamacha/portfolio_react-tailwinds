@@ -14,7 +14,7 @@ import mysql from "../assets/img/logos/mysql.png";
 
 const Skills = () => {
   return (
-    <div className='skillss dark:bg-gray-900'>
+    <div id='skills' className='skillss dark:bg-gray-900'>
       <p className='p-4 text-black text-lg font-bold dark:text-white dark:bg-gray-900'>
         Soy un desarrollador Full Stack con experiencia en Java y Python,
         estudiante de diseño UX/UI. Mi trayectoria incluye sólidos conocimientos

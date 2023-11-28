@@ -1,4 +1,4 @@
-import  { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import img1 from "../assets/img/certificados/1.webp";
 import img2 from "../assets/img/certificados/2.webp";
 import img3 from "../assets/img/certificados/3.webp";
@@ -45,18 +45,29 @@ const Certificate = () => {
   }, [selectedImage]);
 
   return (
-    <div className='certificates dark:text-white dark:bg-gray-900'>
+    <div
+      id='certificate'
+      className='certificates dark:text-white dark:bg-gray-900'>
       {selectedImage && (
         <div className='modal dark:text-white dark:bg-gray-900'>
-          <div ref={imageRef}>
-            <img src={selectedImage} alt='' style={{ width: "100%" }} />
+          <div ref={imageRef} style={{ position: "relative" }}>
+            <img
+              src={selectedImage}
+              alt=''
+              style={{
+                width: "60%",
+                margin: "0 auto",
+                display: "block",
+                zIndex: 605,
+              }}
+            />
+            <button
+              className='text-white text-3xl bg-red-700 hover:bg-red-800 focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full  px-5 py-2.5 text-center me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900 absolute top-0 right-0'
+              onClick={closeModal}
+              style={{ opacity: 0.8 }}>
+              Cerrar
+            </button>
           </div>
-          <button
-            className='absolute mt-5 mr-5 top-0 right-0 border-gray-400 text-white bg-red-800 hover:bg-red-500 focus:outline-none focus:ring-4 focus:ring-purple-300 rounded-full text-2xl font-bold px-5 py-2.5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900 animate-pulse'
-            onClick={closeModal}
-            style={{ opacity: 0.8 }}>
-            Cerrar
-          </button>
         </div>
       )}
       <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>

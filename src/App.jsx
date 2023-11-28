@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { Route, Routes, useLocation } from "react-router-dom";
+import React from "react";
 import Navbar from "./shared/Navbar";
 import Footer from "./shared/Footer";
 import Home from "./components/Home";
@@ -10,29 +9,16 @@ import Proyect from "./components/Proyect";
 import Contact from "./components/Contact";
 
 const App = () => {
-  const location = useLocation();
-  const [transparentBackground, setTransparentBackground] = useState(false);
-
-  useEffect(() => {
-    if (location.pathname === "/") {
-      setTransparentBackground(true);
-    } else {
-      setTransparentBackground(false);
-    }
-  }, [location]);
-
   return (
     <div>
       <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='skills' element={<Skills />} />
-        <Route path='certificate' element={<Certificate />} />
-        <Route path='proyect' element={<Proyect />} />
-        <Route path='contact' element={<Contact />} />
-      </Routes>
-      <Footer transparentBackground={transparentBackground} />
+      <Home />
+      <About />
+      <Skills />
+      <Certificate />
+      <Proyect />
+      <Contact />
+      <Footer />
     </div>
   );
 };

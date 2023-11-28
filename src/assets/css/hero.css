@@ -21,9 +21,9 @@ opacity: 0.8;
     }
 
     .porfolio-digital{
-        margin-top:100px;
+        margin-top:10px;
         color: white;
-        font-size: 55px;
+        font-size: 75px;
     }
 }
 
@@ -31,3 +31,11 @@ opacity: 0.8;
     margin-top: 50px;
 
 }
+@media (max-width: 600px) {
+    /* Estilos para dispositivos pequeños */
+    .fotos {
+      margin-top: 180px;
+    }
+    
+  }
+  
