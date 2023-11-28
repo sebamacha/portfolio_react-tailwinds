@@ -13,68 +13,70 @@ import img10 from "../assets/img/contacto/10.webp";
 
 const Contact = () => {
   return (
-    <div id='contact' className='tapiz dark:bg-slate-800 pt-4 dark:text-white'>
-      <div className='text-center m-4 p-4 text-4xl font-bold'>
+    <div
+      id='contact'
+      className='tapiz estabilizar dark:bg-slate-800 pt-4 dark:text-white pb-5'>
+      <div className='text-center m-4 mb-8 p-4 text-4xl font-bold bg-purple-100 text-purple-800 me-2 px-2.5 py-0.5 rounded-xl dark:text-white dark:bg-gray-900 round-xl rounded-xl pb-5'>
         <h1>Por estos medios puedes contactarme y ver parte de mis trabajos</h1>
       </div>
 
-      <div className='container mx-auto'>
-        <div className='flex  justify-center flex-wrap p-4'>
+      <div className='container redess mt-1 mx-auto pt-12 pb-5 bg-purple-100 text-purple-800 me-2 px-2.5 py-0.5 rounded-xl dark:text-white dark:bg-gray-900 rounded-xl  '>
+        <div className='flex  justify-center flex-wrap pb-20  '>
           <a
             href='https://wa.me/+543464573869'
             rel='noreferrer'
             target='_blank'
             className='m-2'>
-            <img className='animate-pulse h-20 w-20' src={img1} alt='' />
+            <img className='mt-4 animate-pulse h-20 w-20' src={img1} alt='' />
           </a>
           <a
             href='https://www.twitter.com/SMacharette'
             rel='noreferrer'
             target='_blank'
             className='m-2'>
-            <img className='animate-pulse h-20 w-20' src={img2} alt='' />
+            <img className='mt-4 animate-pulse h-20 w-20' src={img2} alt='' />
           </a>
           <a
             href='https://www.instagram.com/sebastianmacharette1984'
             rel='noreferrer'
             target='_blank'
             className='m-2'>
-            <img className='animate-pulse h-24 w-24' src={img3} alt='' />
+            <img className='mt-4 animate-pulse h-24 w-24' src={img3} alt='' />
           </a>
           <a
             href='tel:+543464573869'
             rel='noreferrer'
             target='_blank'
             className='m-2'>
-            <img className='animate-pulse h-20 w-20' src={img4} alt='' />
+            <img className='mt-4 animate-pulse h-20 w-20' src={img4} alt='' />
           </a>
           <a
             href='https://t.me/sebamacha'
             rel='noreferrer'
             target='_blank'
             className='m-2'>
-            <img className='animate-pulse h-20 w-20' src={img5} alt='' />
+            <img className='mt-4 animate-pulse h-20 w-20' src={img5} alt='' />
           </a>
           <a
             href='https://discord.com/channels/sebastianmacharette'
             rel='noreferrer'
             target='_blank'
             className='m-2'>
-            <img className='animate-pulse h-20 w-20' src={img6} alt='' />
+            <img className='mt-4 animate-pulse h-20 w-20' src={img6} alt='' />
           </a>
           <a
             href='mailto:sebastian.j.macharette@gmail.com'
             rel='noreferrer'
             target='_blank'
             className='m-2'>
-            <img className='animate-pulse h-20 w-20' src={img7} alt='' />
+            <img className='mt-4 animate-pulse h-20 w-20' src={img7} alt='' />
           </a>
           <a
             href='https://github.com/sebamacha'
             rel='noreferrer'
             target='_blank'
             className='m-2'>
-            <img className='animate-pulse h-20 w-20' src={img8} alt='' />
+            <img className='mt-4 animate-pulse h-20 w-20' src={img8} alt='' />
           </a>
           <a
             href='https://www.dropbox.com/scl/fi/8yxrtc8j1odo3u1ezm5ec/Curriculum.pdf?rlkey=mjtj5wtdbherek9ivkaorbzj8&dl=0'
@@ -82,7 +84,7 @@ const Contact = () => {
             target='_blank'
             className='m-2'>
             <img
-              className='animate-pulse h-20 w-20 transform '
+              className='mt-4 animate-pulse h-20 w-20 transform '
               src={img9}
               alt=''
             />
@@ -92,7 +94,7 @@ const Contact = () => {
             rel='noreferrer'
             target='_blank'
             className='m-2'>
-            <img className='animate-pulse h-24 w-24 ' src={img10} alt='' />
+            <img className='mt-4 animate-pulse h-24 w-24 ' src={img10} alt='' />
           </a>
         </div>
       </div>

@@ -1,6 +1,13 @@
 .certificates{
+  height: auto;
     padding-top: 90px;
     padding-bottom: 90px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    background-image: url("../img/hero.webp");
+    background-size: cover; /* Para que la imagen ocupe todo el contenedor sin repetirse */
+    background-position: center; /* Para centrar la imagen si es necesario */
 }
 
 @media (max-width: 768px) {

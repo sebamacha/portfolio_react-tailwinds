@@ -12,13 +12,20 @@ const about = () => {
           src={avat}
           alt=''
         />
-        <div className='font-medium dark:text-white md:text-center text-left'>
-          <div className='text-3xl mt-4'>Sebastian Macharette</div>
-          <div className='text-4xl mt-0 text-sky-500 dark:text-gray-400 animate-pulse'>
+        <div className='w-max font-medium dark:text-white md:text-center text-left'>
+          <div
+            className='inline-block text-gray-500 bg-purple-100 text-purple-800 me-2 px-2.5 py-0.5 rounded-xl text-3xl mt-4 dark:text-white dark:bg-gray-900'
+            style={{ width: "max-content" }}>
+            Sebastian Macharette
+          </div>
+          <br />
+          <div
+            className='inline-block text-gray-500 bg-purple-100 text-purple-800 me-2 px-2.5 py-0.5 rounded-xl text-3xl mt-4 dark:text-white dark:bg-gray-900'
+            style={{ width: "max-content" }}>
             Full Stack Developer
           </div>
-          <div className='mx-4 mt-4 sm:text-center lg:flex lg:justify-end'>
-            <p className='text-2xl'>
+          <div className='bg-purple-100 text-black me-2 px-2.5 py-0.5 rounded-xl mt-4 sm:text-center lg:flex lg:justify-end dark:text-white dark:bg-gray-900'>
+            <p className='text-2xl '>
               Soy Sebastián Joaquín Macharette, un apasionado de la programación
               y el diseño.
               <br />
@@ -29,12 +36,12 @@ const about = () => {
               {/* Resto del texto */}
             </p>
           </div>
-          <p className='text-gray-500 text-lg italic mt-6 pr-4 m-10 text-right'>
+          <p className='text-gray-500 bg-purple-100 text-purple-800 me-2 px-2.5 py-0.5 rounded-xl text-lg italic mt-6 pr-4 m-10 text-right dark:text-white dark:bg-gray-900'>
             Los buenos programadores saben qué escribir. Los grandes
             programadores saben qué volver a escribir (y reutilizar).
           </p>
 
-          <h5 className=' text-gray-500  text-lg  italic m-10 pr-4 text-right animate-pulse'>
+          <h5 className='bg-purple-100 text-purple-800 me-2 px-2.5 py-0.5 rounded-xl text-gray-500 w-32  text-lg  italic m-10 pr-4 text-right animate-pulse dark:text-white dark:bg-gray-900'>
             - Eric S. Raymond
           </h5>
           <br />

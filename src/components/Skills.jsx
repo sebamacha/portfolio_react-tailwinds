@@ -15,7 +15,7 @@ import mysql from "../assets/img/logos/mysql.png";
 const Skills = () => {
   return (
     <div id='skills' className='skillss dark:bg-gray-900'>
-      <p className='p-4 text-black text-lg font-bold dark:text-white dark:bg-gray-900'>
+      <p className='bg-purple-100 text-black me-2 px-2.5 py-0.5 rounded-xl  font-bold dark:text-white dark:bg-gray-900'>
         Soy un desarrollador Full Stack con experiencia en Java y Python,
         estudiante de diseño UX/UI. Mi trayectoria incluye sólidos conocimientos
         en desarrollo de aplicaciones, manejo de bases de datos y diseño de
@@ -23,9 +23,9 @@ const Skills = () => {
         impactantes y funcionales.
       </p>
       <div className='grid grid-cols-1 gap-6 sm:grid-cols-2'>
-        <div className='m-4 text-black dark:text-white dark:bg-gray-900'>
+        <div className='m-4 '>
           <div className='flex justify-center'>
-            <h3 className='text-4xl italic m-2 font-bold text-black dark:text-white'>
+            <h3 className='bg-purple-100  me-2 px-2.5 py-0.5 rounded-xl text-4xl italic m-2 font-bold text-black dark:text-black'>
               Frontend
             </h3>
           </div>
@@ -83,9 +83,9 @@ const Skills = () => {
             Canva
           </span>
         </div>
-        <div className='m-4 text-black dark:text-white dark:bg-gray-900'>
-          <div className='flex justify-center'>
-            <h3 className='text-4xl  italic m-2 font-bold text-black dark:text-white'>
+        <div className='m-4 text-'>
+          <div className='flex justify-center '>
+            <h3 className='bg-purple-100 text-black me-2 px-2.5 py-0.5 rounded-xl text-4xl  italic m-2 font-bold text-black dark:text-black'>
               Backend
             </h3>
           </div>
@@ -107,7 +107,7 @@ const Skills = () => {
           <span className='bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-indigo-900 dark:text-indigo-300'>
             Maven
           </span>
-          <span className='bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-purple-900 dark:text-purple-300'>
+          <span className='bg-purple-100 text-purple-800 me-2 px-2.5 py-0.5 rounded text-xs font-medium  dark:bg-purple-900 dark:text-purple-300'>
             Java-Swing
           </span>
           <br />
@@ -122,7 +122,7 @@ const Skills = () => {
           </span>
         </div>
       </div>
-      <p className='p-4 text-black text-lg font-bold dark:text-white dark:bg-gray-900'>
+      <p className='bg-purple-100 text-black me-2 px-2.5 py-0.5 rounded-xl text-black text-lg font-bold dark:text-white dark:bg-gray-900'>
         Destaco por mi habilidad para colaborar en equipo, comunicar ideas de
         manera efectiva y resolver problemas de forma creativa. Además, poseo
         una gran adaptabilidad, capacidad de liderazgo y un enfoque proactivo en

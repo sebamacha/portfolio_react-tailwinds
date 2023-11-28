@@ -1,5 +1,11 @@
 .skillss{
- 
-    min-height: 90vh;
-    margin-top: 220px;
+    height: auto;
+    background-image: url("../img/hero.webp");
+    background-size: cover; /* Para que la imagen ocupe todo el contenedor sin repetirse */
+    background-position: center; /* Para centrar la imagen si es necesario */
+    padding-top: 140px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+    
 }
